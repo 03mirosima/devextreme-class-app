@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "axios": "^0.21.1",
     "devextreme": "^20.2.4",
     "devextreme-react": "20.2.3",
     "devextreme-themebuilder": "19.2-stable",

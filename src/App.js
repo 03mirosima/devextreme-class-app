@@ -51,12 +51,12 @@ class App extends Component {
   constructor(props) {
     super(props);
 
-    let currentTheme = window.localStorage.getItem("dx-theme") || "material.orange.light";
+    let currentTheme = window.localStorage.getItem("dx-theme") || "material.purple.dark.compact";
     
     this.state = {
       loggedIn: true,
       screenSizeClass: this.getScreenSizeClass(),
-      darkMode: currentTheme === "material.orange.light" ? false : true
+      darkMode: currentTheme === "material.purple.dark.compact" ? false : true
     };
 
     this.userMenuItems = [
@@ -77,7 +77,7 @@ class App extends Component {
     ];
   }
   toggleTheme = () => {
-    window.localStorage.setItem("dx-theme", !this.state.darkMode ? "material.orange.dark" : 'material.orange.light');
+    window.localStorage.setItem("dx-theme", !this.state.darkMode ? "material.purple.dark.compact" : 'material.teal.light');
     themes.current(window.localStorage.getItem("dx-theme"));
     this.setState({ darkMode: !this.state.darkMode });
       
